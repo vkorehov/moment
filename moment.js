@@ -3784,6 +3784,7 @@ function getZoneName () {
 
 var proto = Moment.prototype;
 
+proto.default           = Moment
 proto.add               = add;
 proto.calendar          = calendar$1;
 proto.clone             = clone;
