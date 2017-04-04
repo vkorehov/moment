@@ -2331,10 +2331,6 @@ function dayOfYearFromWeekInfo(config) {
     }
 }
 
-hooks.default = function (){
-	return hookCallback.apply(null, arguments);
-}
-
 // constant that refers to the ISO standard
 hooks.ISO_8601 = function () {};
 
@@ -4461,7 +4457,6 @@ hooks.relativeTimeRounding = getSetRelativeTimeRounding;
 hooks.relativeTimeThreshold = getSetRelativeTimeThreshold;
 hooks.calendarFormat        = getCalendarFormat;
 hooks.prototype             = proto;
-
+hooks.default = hooks;
 return hooks;
-
 })));
