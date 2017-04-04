@@ -2332,8 +2332,9 @@ function dayOfYearFromWeekInfo(config) {
 }
 
 hooks.default = function (){
-	return new Moment();
+	return hookCallback.apply(null, arguments);
 }
+
 // constant that refers to the ISO standard
 hooks.ISO_8601 = function () {};
 
